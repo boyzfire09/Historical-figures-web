@@ -1,0 +1,91 @@
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz TOKOH</title>
+  <!-- Linking CSS for styling the quiz app -->
+  <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome CDN Link for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+
+  <header>
+    <a href="#" class="logo">Historical Figures</a>
+    <nav>
+       <a href="index.html" class="active">Home</a>
+       <a href="biography.html">Biography</a>
+    </nav>
+  </header>
+    
+  <!-- Start Quiz Button -->
+  <div class="start_btn"><button>Mulai Quiz</button></div>
+
+  <!-- Info Box (displayed when the quiz starts) -->
+  <div class="info_box">
+    <div class="info-title"><span>Aturan untuk mengerjakan quiz</span></div>
+    <div class="info-list">
+      <div class="info">1. Anda hanya punya waktu <span>15 detik </span>untuk setiap pertanyaan.</div>
+      <div class="info">2. Setelah anda memilih jawaban, jawaban tersebut tidak dapat dibatalkan.</div>
+      <div class="info">3. Anda tidak dapat memilih opsi apa pun setelah waktu habis.</div>
+      <div class="info">4. Anda tidak dapat keluar dari Kuis saat sedang bermain.</div>
+      <div class="info">5. Anda akan mendapatkan poin berdasarkan jawaban Anda yang benar.</div>
+    </div>
+    <div class="buttons">
+      <button class="quit">Keluar</button>
+      <button class="restart">Lanjut</button>
+    </div>
+  </div>
+
+  <!-- Quiz Box (main container for the quiz) -->
+  <div class="quiz_box">
+    <header>
+      <div class="title">Quiz Application</div>
+      <div class="timer">
+        <div class="time_left_txt">Waktu tersisa</div>
+        <div class="timer_sec">15</div>
+      </div>
+      <div class="time_line"></div>
+    </header>
+    <section>
+      <div class="que_text">
+        <!-- Question text will be inserted here by JavaScript -->
+      </div>
+      <div class="option_list">
+        <!-- Options will be inserted here by JavaScript -->
+      </div>
+    </section>
+
+    <!-- Footer of Quiz Box -->
+    <footer>
+      <div class="total_que">
+        <!-- Question count number will be inserted here by JavaScript -->
+      </div>
+      <button class="next_btn">Lanjut</button>
+    </footer>
+  </div>
+
+  <!-- Result Box (displayed after completing the quiz) -->
+  <div class="result_box">
+    <div class="icon">
+      <i class="fas fa-crown"></i>
+    </div>
+    <div class="complete_text">Anda telah menyelesaikan Kuis!</div>
+    <div class="score_text">
+      <!-- Score result will be inserted here by JavaScript -->
+    </div>
+    <div class="buttons">
+      <button class="restart">Mengulang Quiz</button>
+      <button class="quit">Keluar dari Quiz</button>
+    </div>
+  </div>
+
+  <!-- JavaScript file for managing questions and options -->
+  <script src="js/questions.js"></script>
+
+  <!-- JavaScript file containing all quiz logic -->
+  <script src="js/script.js"></script>
+</body>
+</html>

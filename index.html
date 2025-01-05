@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Figures</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section id ="header">
+    <div class="logo-container">
+    <span class="brand-text">Historical Figures</span>
+    </div> 
+    <div>
+        <ul id="navbar">
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>      
+    </section>
+
+    <!-- Hero Section -->
+    <div class="banner" id="banner">
+        <div class="content tokoh1 active">
+          <h4 id="banner-title">Historical Figure</h4>
+          <p id="banner-text">Sejarah dunia tokoh dari seluruh Dunia, yang mencakup individu-individu berpengaruh yang telah memberikan dampak besar pada peradaban manusia. Tokoh-tokoh ini dapat berasal dari berbagai bidang seperti politik, ilmu pengetahuan, seni, hingga perjuangan sosial.</p>
+          <div class="button-container" id="button-container" style="display: none;">
+            <a href="#" id="dynamic-button">Baca Selengkapnya!</a>
+          </div>
+        </div>
+     
+        <!-- Carousel Box -->
+        <div class="carousel-box">
+          <div class="carousel">
+            <div class="carousel-item" onclick="updateContent('Historical Figure', 'Sejarah dunia tokoh dari seluruh Dunia, yang mencakup individu-individu berpengaruh yang telah memberikan dampak besar pada peradaban manusia. Tokoh-tokoh ini dapat berasal dari berbagai bidang seperti politik, ilmu pengetahuan, seni, hingga perjuangan sosial.')">
+              <img src="Image/tokohh1.jpg" alt="Tokoh 1">
+            </div>
+            <div class="carousel-item" onclick="updateContent('Biography', 'Rangkaian cerita tentang tokoh terkenal Dalam sebuah biografi, biasanya dijelaskan latar belakang tokoh, pendidikan, karier, serta peran penting yang menjadikan tokoh tersebut dikenang oleh banyak orang.', 'biography.html');">
+              <img src="Image/biographyy.jpg" alt="Biography">
+            </div>
+            <div class="carousel-item" onclick="updateContent('TimeLine', 'Perjalanan sejarah berdasarkan waktu.  perjalanan hidup seorang tokoh terkenal dapat menunjukkan berbagai momen penting dalam hidupnya, seperti kelahiran, pencapaian besar, hingga peristiwa-peristiwa yang membentuk perjalanan karier atau kontribusinya terhadap masyarakat.', 'timeline.html');">
+              <img src="Image/timelinee.jpeg" alt="Timeline">
+            </div>
+
+          </div>
+        </div>
+
+      
+      
+          
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+   $(document).ready(function(){
+    $('.carousel').carousel();
+  });
+</script>
+</body>
+</html>
