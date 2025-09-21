@@ -1,4 +1,5 @@
 Historical Figures Web 🌍
+
 Website ini merupakan tugas proyek kuliah yang bertujuan untuk memperkenalkan para tokoh bersejarah dari berbagai belahan dunia.
 Dengan adanya website ini, diharapkan pengguna dapat lebih mengenal tokoh-tokoh penting yang berpengaruh dalam bidang ilmu pengetahuan, politik, seni, maupun budaya.
 
